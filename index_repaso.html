@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    
+    <title>Pruduct App</title>
+</head>
+
+<body>
+    <!--  NAVEGACIÓN  -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a href="" class="nav-brand  centrado" >
+            CRUD Javascript 
+        </a>
+    </nav>
+    <div class="container">
+        <!--  APLICACIÓN   -->
+        <div id="app" class="row pt-5">
+            <div class="col-md-5">
+                <div class="card">
+                    <div class="card-header">
+                        <h4>Agrega un producto</h4>
+                    </div>
+                    <form id="formularioProducto" class="card-body">
+                        <div class="form-group">
+                            <label for="nombreForm"></label>
+                            <input type="text" name="" id="nombreForm" class="form-control" placeholder="Nombre del producto">
+                        </div>
+                        <div class="form-group">
+                            <label for="precioForm"></label>
+                            <input type="number" name="" id="precioForm" step="0.01" placeholder="Precio del producto" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="añoForm"></label>
+                            <input type="number" name="" id="añoForm" class="form-control" min="1990" max="2022" value="2021" placeholder="Año del producto">
+                            <label for="salvar"></label>
+                            <input type="submit" value="Agregar Producto" id="salvar" class="btn btn-danger btn-block">
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+            <div id="listaDeProducto" class="col-md-7">
+
+            </div>
+        </div>
+
+    </div>
+
+    <script src="js/app_repaso.js"></script>
+</body>
+
+</html>
